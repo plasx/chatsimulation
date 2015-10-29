@@ -1,0 +1,225 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+
+html, body {
+    background: #f7f2eb;
+    font-family: 'Lato', sans-serif;
+    margin: 0px auto;
+}
+.chat {
+    list-style: none;
+    background: none;
+    margin: 0;
+    padding: 0 0 50px 0;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+.chat li {
+    padding: 0.5rem;
+    overflow: hidden;
+    display: flex;
+}
+.other .msg {
+    order: 1;
+    border-top-left-radius: 0px;
+    box-shadow: -1px 2px 0px #D4D4D4;
+}
+.other:before {
+    content: "";
+    position: relative;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+    border: 5px solid #fff;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+}
+.self:after {
+    content: "";
+    position: relative;
+    display: inline-block;
+    bottom: 0px;
+    right: 0px;
+    width: 0px;
+    height: 0px;
+    border: 5px solid #837089;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    box-shadow: 0px 2px 0px #E7E2DB;
+}
+.msg {
+    background: white;
+    min-width: 374px;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.07);
+}
+.msg p, .pay-ready  section h4 {
+    margin: 0 0 0.2rem 0;
+    color: #837089;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+.self .msg h4 {
+    margin: 0 0 0.2rem 0;
+}
+ .pay-ready section h4 span{
+    float:right;
+ }
+
+/* STYLING FOR ANSWERS FROM APPLCIATION */
+
+.other .msg .contacts h4 {
+    color:#837089;
+    font-size: 1.5em;
+    line-height: 0%;
+}
+.other .msg .contacts .grey {
+color: #9f92a4;
+}
+.contacts img{
+    width: 66px;
+    border-radius: 50%;
+    margin: 15px 15px 0 0;
+    float: left
+}
+.contacts img:nth-of-type(1){
+    margin:15px 15px 15px 15px;
+}
+
+.confirmation{
+    border-bottom: solid #e4ddd5 1px;
+}
+.contacts div{
+    float:left;
+}
+.self {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.self .msg{
+    background-color: #837089;
+    border-bottom-right-radius:0px;
+    font-color:white;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+.self .msg h4{
+    color:white;
+}
+.plussign{
+    float:left;
+    letter-spacing: -18px;
+    font-size: 40px;
+    color: #52235a;
+    margin-left:16px;
+}
+.payee{
+    margin-left: 36px;
+    margin-top: 29px;
+}
+/* CONFIRMATION BUTTONS */
+.button {
+    padding:  10px 70px;
+    background-color: #FFFFFF;
+    border: 1px solid #D4D4D4;
+    color: #837089;
+    text-decoration: none;
+    font-size:1.5em;
+    margin:5px 0;
+}
+.button:nth-of-type(2){
+    margin-left:15px;
+}
+.pay-ready{
+    margin-left:10px;
+    background-color: white;
+}
+.pay-ready div{
+    background-color: #ffb121;
+    color: #370141;
+    font-size: 37px;
+    font-weight: 900;
+}
+.pay-ready img{
+    width: 144px;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom:-82px;
+    margin-left: 31%;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+}
+.pay-ready div p{
+    padding:23px 23px 0 23px;
+    margin:0;
+}
+.pay-ready section{
+    padding:80px 23px 0 23px;
+    width: 69%;
+    margin-left: 8%;
+}
+.pay-ready .confirmation{
+    width:100%;
+    padding:0;
+    margin:0;
+    padding-left:11px;
+}
+.pay-ready section h4:nth-child(n+2){
+    color: #9f92a4;
+}
+.amount ,.receiving{
+    color:white;
+}
+.confir{
+background-color: #C9C5BE;
+}
+/* RESPONSIVE STYLING */
+@media screen and (max-width: 550px) {
+    h4{
+        font-size:0.8em;
+    }
+    .msg{
+        min-width:0;
+    }
+    .other .msg .contacts h4 {
+    color:#837089;
+    font-size: 1em;
+    line-height: 0%;
+    }
+    .msg p, .pay-ready section h4 {
+    font-weight: 500;
+    font-size: 1.2em;
+    }
+    .msg img {
+    width:36px;
+    }
+    .pay-ready div {
+    background-color: #ffb121;
+    color: #370141;
+    font-size: 21px;
+    font-weight: 900;
+    }
+    .pay-ready section {
+    padding: 60px 23px 0 11px;
+    width: 87%;
+    margin-left: 2%;
+    }
+    .pay-ready img {
+    width: 84px;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: -52px;
+    margin-left: 31%;
+    margin-top: 12px;
+    }
+    .button{
+    padding: 10px 41px;
+    font-size: 1em;
+    margin: 5px 0;
+    }
+}
+.clearing{
+    clear:both;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Responcive CSS Chat</title> 
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+  </head>
+  <body>
+    <ol class="chat">
+          <li class="self">  
+                <div class="msg">
+                <h4>Pay Rasha $10,000</h4>
+                </div>
+          </li>
+          <li class="other">
+              <div class="msg">
+                <p class="confirmation">Which Rasha?</p>
+                <div class="contacts">
+                  <img src="rashav.png">
+                  <div>
+                    <h4>Rashav Chader (Mobile)</h4>
+                    <h4 class="grey">7878 6789 6789</h4>
+                  </div>
+                </div>
+                <!-- contacts -->
+                <div class="clearing confirmation"></div>
+                <div class="contacts">
+                  <img src="blank.png">
+                  <div>
+                    <h4>Rashav Aadhaar</h4>
+                    <h4 class="grey">7878 6787 6989</h4>
+                  </div>
+                </div>
+                <!-- contacts -->
+                <div class="clearing confirmation"></div>
+                <div class="contacts">
+                  <span class= "plussign">&#10797; &#10798;</span>
+                  <div>
+                    <h4 class="payee">Add New Payee</h4>
+                  </div>
+                  </div>
+              </div>
+          </li>
+          <li class="other">
+                <div class="msg">
+                <p>Ok, Rashav Chader (Mobile)</p>
+                </div>
+          </li>
+          <li class="other">
+                <div class="msg">
+                <p>Is this a recurring payment?</p>
+                <input class="button" value="Yes" type="submit" />
+                <input class="button" value="No" type="submit" />
+                </div>
+          </li>  
+          <li>
+                <div class="pay-ready">
+                  <div>
+                  <p>You’re ready to send <br />
+                    <span class="amount">10.000</span> to <span class ="receiving">Rishav <br />
+                    Chadar (Mobile)</span></p>
+                    <img src="rashav.png">
+                  </div>
+                  <section>
+                    <h4>From Day-to-day Account</h4>
+                    <h4>A/C#:       <span>1233456789</span></h4>
+                    <h4>Bank Name:  <span>Citibank</span></h4>
+                    <h4>IFCS Code:    <span>123456</span></h4>
+                  </section>
+                  <section class="confirmation">
+                    <input class="button" value="Yes" type="submit" />
+                    <input class="button" value="No" type="submit" />
+                  </section>
+                </div>
+          </li>
+    </ol> 
+  </body>
+</html>
